@@ -152,9 +152,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Search functionality that allows users to search for specific blog posts or topics**
-- [ ] **User authentication and authorization to secure the app and allow only authorized users to access specific features**
-- [ ] **Support for multimedia content, such as images and videos, to enhance the user experience**
+- [ ] **Add search functionality that allows users to search for specific blog posts or topics**
+- [ ] **Add user authentication and authorization to secure the app and allow only authorized users to access specific features**
+- [ ] **Add support for multimedia content, such as images and videos, to enhance the user experience**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
