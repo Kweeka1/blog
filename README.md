@@ -26,7 +26,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Blog app <a name="about-project"></a>
 
 **[your_project__name]** is a...
 
@@ -37,14 +37,16 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://rubyonrails.org/">Ruby On Rails</a></li>
   </ul>
 </details>
 
@@ -81,53 +83,37 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-
-<!--
-Example command:
+In order to run this project you need to install rails gem:
 
 ```sh
  gem install rails
 ```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:Kweeka1/blog.git
 ```
---->
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
+Install dependencies by executing the following commands:
 
 ```sh
-  cd my-project
-  gem install
+  cd blog
+  bundle install
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
   rails server
 ```
---->
 
 ### Run tests
 
@@ -159,17 +145,9 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Mohamed Talbi**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Kweeka1](https://github.com/Kweeka1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,7 +189,7 @@ I would like to thank Microverse for project inspiration.
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
 - **[Question_1]**
 
