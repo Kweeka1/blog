@@ -26,9 +26,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Blog app <a name="about-project"></a>
 
-**[your_project__name]** is a...
+**Blog App** is a classic blog website built using Ruby on Rails and PostgreSQL. It is a fully functional website that provides an excellent example of a blog platform. With this app, users can easily browse through a list of posts and interact with them by adding comments or likes.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -37,14 +37,16 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://rubyonrails.org/">Ruby On Rails</a></li>
   </ul>
 </details>
 
@@ -59,17 +61,16 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Enable users to create, edit, and delete their own posts**
+- **Allow users to add comments to blog posts**
+- **Enable users to like or dislike blog posts**
+- **The app has a modern and sleek interface design**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+## 🚀 Live Demo (Coming soon) <a name="live-demo"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,71 +82,53 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-
-<!--
-Example command:
+In order to run this project you need to install rails gem:
 
 ```sh
  gem install rails
 ```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:Kweeka1/blog.git
 ```
---->
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
+Install dependencies by executing the following commands:
 
 ```sh
-  cd my-project
-  gem install
+  cd blog
+  bundle install
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
   rails server
 ```
---->
 
-### Run tests
+### Run tests (Coming soon)
 
+<!--
 To run tests, run the following command:
 
-<!--
-Example command:
-
 ```sh
-  bin/rails test test/models/article_test.rb
+
 ```
---->
+-->
 
-### Deployment
+### Deployment (Coming soon)
 
+<!--
 You can deploy this project using:
 
-<!--
 Example:
 
 ```sh
@@ -159,17 +142,9 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Mohamed Talbi**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Kweeka1](https://github.com/Kweeka1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,9 +152,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Add search functionality that allows users to search for specific blog posts or topics**
+- [ ] **Add user authentication and authorization to secure the app and allow only authorized users to access specific features**
+- [ ] **Add support for multimedia content, such as images and videos, to enhance the user experience**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -209,18 +184,16 @@ I would like to thank Microverse for project inspiration.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
+<!-- FAQ -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
-- **[Question_1]**
-
-    - [Answer_1]
-
-- **[Question_2]**
-
-    - [Answer_2]
-
+- **Which version of ruby does this project run on?**
+    - This project is currently running on ruby version 3.1.2
+- **Can I use the Blog app for my own blog?**
+    - Yes! The Blog app is open source, meaning you can download the source code and modify it to suit your needs.
+- **Can I contribute to the development of the Blog app?**
+    - Yes! contributions, issues, and feature requests are welcome!.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
