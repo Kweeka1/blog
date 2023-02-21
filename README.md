@@ -189,9 +189,11 @@ I would like to thank Microverse for project inspiration.
 ## ❓ FAQ <a name="faq"></a>
 
 - **Which version of ruby does this project run on?**
-
     - This project is currently running on ruby version 3.1.2
-
+- **Can I use the Blog app for my own blog?**
+    - Yes! The Blog app is open source, meaning you can download the source code and modify it to suit your needs.
+- **Can I contribute to the development of the Blog app?**
+    - Yes! contributions, issues, and feature requests are welcome!.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
