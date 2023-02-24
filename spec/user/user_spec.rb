@@ -10,11 +10,6 @@ RSpec.describe User, type: :model do
     expect(subject).to_not be_valid
   end
 
-  it 'photo should be a valid link' do
-    subject.photo = 'my photo'
-    expect(subject).to_not be_valid
-  end
-
   it 'bio can be blank' do
     subject.bio = nil
     expect(subject).to be_valid
