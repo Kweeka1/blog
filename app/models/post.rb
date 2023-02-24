@@ -7,7 +7,6 @@ class Post < ApplicationRecord
   validates_associated :likes, :comments, :user
 
   validates :title, length: { maximum: 250 }, allow_blank: false
-  validates :text, presence: true, length: { minimum: 100, maximum: 500 }
   validates :comments_counter, numericality: { only_integer: true }, comparison: { greater_than_or_equal_to: 0 }
   validates :likes_counter, numericality: { only_integer: true }, comparison: { greater_than_or_equal_to: 0 }
 
