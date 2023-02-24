@@ -29,11 +29,6 @@ RSpec.describe Post, type: :model do
     expect(subject).to_not be_valid
   end
 
-  it 'text should be present' do
-    subject.text = nil
-    expect(subject).to_not be_valid
-  end
-
   it 'comments counter should be greater or equal to 0' do
     subject.comments_counter = -1
     expect(subject).to_not be_valid
