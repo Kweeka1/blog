@@ -2,8 +2,15 @@ require_relative '../rails_helper'
 
 RSpec.describe Comment, type: :model do
   user = User.create(name: 'Peter', photo: 'https://imgur.com/xF8eA5', bio: 'Hi my name is Peter', posts_counter: 0)
-  post = Post.create(user: user, title: 'What is MVC pattern', text: 'Model–view–controller is a software architectural pattern commonly used for developing user interfaces that divide the related program logic into three interconnected elements.', comments_counter: 0, likes_counter: 0)
-  subject { Comment.create(user: user, post: post, text: 'Nice post. Can you make another one to discuss about the difference between MVC and Restful API.') }
+  post = Post.create(user:, title: 'What is MVC pattern',
+                     text: 'Model–view–controller is a software architectural pattern commonly used for developing ' \
+                           'user interfaces that divide the related program logic into three interconnected elements.',
+                     comments_counter: 0, likes_counter: 0)
+  subject do
+    Comment.create(user:, post:,
+                   text: 'Nice post. Can you make another one to discuss about the ' \
+                         'difference between MVC and Restful API.')
+  end
 
   before { subject.save }
 
@@ -23,7 +30,10 @@ RSpec.describe Comment, type: :model do
   end
 
   it 'text\'s length should be less than 200 characters' do
-    subject.text = 'Model–view–controller is a software architectural pattern commonly used for developing user interfaces that divide the related program logic into three interconnected elements. Model–view–controller is a software architectural pattern commonly used for developing user interfaces that divide the related program logic'
+    subject.text = 'Model–view–controller is a software architectural pattern commonly used for developing' \
+                   'user interfaces that divide the related program logic into three interconnected elements. ' \
+                   'Model–view–controller is a software architectural pattern commonly used for developing user ' \
+                   'interfaces that divide the related program logic'
     expect(subject).to_not be_valid
   end
 end
