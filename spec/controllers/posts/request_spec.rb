@@ -1,12 +1,12 @@
 require_relative '../../rails_helper'
 
 RSpec.describe 'Posts', type: :request do
-  context "index action" do
+  context 'index action' do
     before(:example) do
-      get "/users/1/posts"
+      get '/users/1/posts'
     end
 
-    it "should return 200 status code" do
+    it 'should return 200 status code' do
       expect(response).to have_http_status(:ok)
     end
 
@@ -15,12 +15,12 @@ RSpec.describe 'Posts', type: :request do
     end
   end
 
-  context "show action" do
+  context 'show action' do
     before(:example) do
-      get "/users/1/posts/1"
+      get '/users/1/posts/1'
     end
 
-    it "should return 200 status code" do
+    it 'should return 200 status code' do
       expect(response).to have_http_status(:ok)
     end
 
