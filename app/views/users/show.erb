@@ -1,1 +1,29 @@
-Here is a some details for a given user
+<%= stylesheet_link_tag "user" %>
+<section class="user-row">
+  <div class="profile-photo">
+    <div class="placeholder-photo"></div>
+  </div>
+  <div class="user">
+    <h2><%= @user.name %></h2>
+    <p>Number of posts: <%= @user.posts_counter || 0 %></p>
+  </div>
+</section>
+<section class="bio">
+  <h4>Bio</h4>
+  <p><%= @user.bio %></p>
+</section>
+<section class="posts">
+  <% @recent_posts.each_with_index do |post, idx| %>
+    <article class="post" id="<%= idx %>">
+      <h3><%= post.title %></h3>
+      <p><%= post.text %></p>
+      <div class="reactions">
+        <p>Comments: <%= post.comments_counter || 0 %>,&nbsp;</p>
+        <p>Likes: <%= post.likes_counter || 0 %></p>
+      </div>
+    </article>
+  <% end %>
+</section>
+<footer>
+  <button class="footer-btn">See all posts</button>
+</footer>
