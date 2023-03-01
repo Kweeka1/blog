@@ -11,7 +11,7 @@
 <section class="posts">
   <% @user.posts.each_with_index do |post, idx| %>
     <article class="post" id="<%= idx %>">
-      <h3><%= post.title %></h3>
+      <h3><%= link_to post.title, controller: "posts", action: "show", user_id: @user.id, post_id: post.id %></h3>
       <p><%= post.text %></p>
       <div class="reactions">
         <p>Comments: <%= post.comments_counter || 0 %>,&nbsp;</p>
