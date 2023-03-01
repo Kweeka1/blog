@@ -5,7 +5,7 @@
       <div class="placeholder-photo"></div>
     </div>
     <div class="user">
-      <h2><%= user.name %></h2>
+      <h2><%= link_to user.name, user_path(user), class: 'username' %></h2>
       <p>Number of posts: <%= user.posts_counter || 0 %></p>
     </div>
   </div>
