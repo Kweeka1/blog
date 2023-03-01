@@ -25,5 +25,7 @@
   <% end %>
 </section>
 <footer>
-  <button class="footer-btn">See all posts</button>
+  <button class="footer-btn">
+    <%= link_to 'See all Post', user_posts_path(@user) %>
+  </button>
 </footer>
