@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.user-row {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+}
+
+.placeholder-photo {
+  width: 100%;
+  height: 100%;
+  background-color: #666;
+}
+
+.user {
+  width: 80%;
+  padding: 1rem 2rem;
+  border: 1px solid #666;
+}
+
+.user > h2 {
+  margin: 1.5rem 0;
+}
+
+.user > p {
+  text-align: right;
+}
