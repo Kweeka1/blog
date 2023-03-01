@@ -1,1 +1,29 @@
-Here is a list of posts for a given user
+<%= stylesheet_link_tag "posts" %>
+<section class="user-row">
+  <div class="profile-photo">
+    <div class="placeholder-photo"></div>
+  </div>
+  <div class="user">
+    <h2><%= @user.name %></h2>
+    <p>Number of posts: <%= @user.posts_counter || 0 %></p>
+  </div>
+</section>
+<section class="posts">
+  <% @user.posts.each_with_index do |post, idx| %>
+    <article class="post" id="<%= idx %>">
+      <h3><%= link_to post.title, controller: "posts", action: "show", user_id: @user.id, post_id: post.id %></h3>
+      <p><%= post.text %></p>
+      <div class="reactions">
+        <p>Comments: <%= post.comments_counter || 0 %>,&nbsp;</p>
+        <p>Likes: <%= post.likes_counter || 0 %></p>
+      </div>
+      <div class="comments">
+        <% post.show_recent_comments.each do |comment| %>
+          <div class="comment">
+            <p><strong><%= comment.user.name %></strong>: <%= comment.text %></p>
+          </div>
+        <% end %>
+      </div>
+    </article>
+  <% end %>
+</section>
