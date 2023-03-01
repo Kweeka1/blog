@@ -59,6 +59,10 @@ body {
   margin: 0.5rem 0 1rem 0;
 }
 
+.post > h3 > a {
+  color: black;
+}
+
 .post > p {
   overflow: hidden;
   width: 100%;

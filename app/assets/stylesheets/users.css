@@ -24,6 +24,11 @@
   background-color: #666;
 }
 
+.username {
+  color: black;
+  text-decoration-line: none;
+}
+
 .user {
   width: 80%;
   padding: 1rem 2rem;
