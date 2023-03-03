@@ -59,6 +59,10 @@ body {
   margin: 0.5rem 0 1rem 0;
 }
 
+button > a {
+  all: unset;
+}
+
 .post > h3 > a {
   color: black;
 }
@@ -97,8 +101,4 @@ button {
 
 button:hover {
   background-color: #3e8e41;
-}
-
-button > a {
-  all: unset;
 }
