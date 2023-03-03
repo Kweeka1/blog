@@ -1,0 +1,11 @@
+<%= form_with model: @post, url: "/users/#{@user.id}/posts/create" do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %>
+  </div>
+  <button type="submit">Add post</button>
+<% end %>
