@@ -7,6 +7,14 @@
     <p>Comments: <%= @post.comments_counter || 0 %>,&nbsp;</p>
     <p>Likes: <%= @post.likes_counter || 0 %></p>
   </div>
+  <div class="actions">
+    <button>
+      <%= link_to 'add Comment', controller: 'comments', action: 'new' %>
+    </button>
+    <button>
+      <%= link_to 'add Like', controller: 'likes', action: 'create' %>
+    </button>
+  </div>
   <p><%= @post.text %></p>
   <div class="comments">
     <% @post.comments.each do |comment| %>
@@ -16,13 +24,3 @@
     <% end %>
   </div>
 </article>
-<section class="add-comment-section">
-  <%= form_with model: @comment, url: "/users/#{@user_id}/posts/#{@post.id}" do |form| %>
-    <%= form.label :text, 'Comment' %><br>
-    <%= form.text_area :text %>
-    <button type="submit">Add comment</button>
-    <button>
-      <%= link_to 'add Like', controller: 'posts', action: 'add_like' %>
-    </button>
-  <% end %>
-</section>
