@@ -1,0 +1,8 @@
+<%= stylesheet_link_tag 'comment' %>
+<section class="add-comment-section">
+  <%= form_with model: @comment, url: "/users/#{@user_id}/posts/#{@post_id}/comment" do |form| %>
+    <%= form.label :text, 'Comment' %><br>
+    <%= form.text_area :text %>
+    <button type="submit">Add comment</button>
+  <% end %>
+</section>
