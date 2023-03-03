@@ -16,3 +16,13 @@
     <% end %>
   </div>
 </article>
+<section class="add-comment-section">
+  <%= form_with model: @comment, url: "/users/#{@user_id}/posts/#{@post.id}" do |form| %>
+    <%= form.label :text, 'Comment' %><br>
+    <%= form.text_area :text %>
+    <button type="submit">Add comment</button>
+    <button>
+      <%= link_to 'add Like', controller: 'posts', action: 'add_like' %>
+    </button>
+  <% end %>
+</section>
