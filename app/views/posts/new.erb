@@ -1,11 +1,8 @@
-<%= form_with model: @post, url: "/users/#{@user.id}/posts/create" do |form| %>
-  <div>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </div>
-  <div>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
-  </div>
+<%= stylesheet_link_tag "form" %>
+<%= form_with model: @post, url: "/users/#{@user_id}/posts/create" do |form| %>
+  <%= form.label :title %><br>
+  <%= form.text_field :title %>
+  <%= form.label :text %><br>
+  <%= form.text_area :text %>
   <button type="submit">Add post</button>
 <% end %>
