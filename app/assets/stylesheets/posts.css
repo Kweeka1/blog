@@ -59,6 +59,10 @@ body {
   margin: 0.5rem 0 1rem 0;
 }
 
+button > a {
+  all: unset;
+}
+
 .post > h3 > a {
   color: black;
 }
@@ -83,4 +87,18 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem 0 0 0;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
 }
