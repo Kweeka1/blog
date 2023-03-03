@@ -75,3 +75,9 @@ button:hover {
 button > a {
   all: unset;
 }
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0 1rem 0;
+}
