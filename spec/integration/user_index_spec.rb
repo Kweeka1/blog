@@ -4,7 +4,7 @@ RSpec.describe 'users index page', type: :system do
   context 'index page' do
     it 'User should see the username of all other users' do
       visit root_path
-      expect(page).to have_content('Mark')
+      expect(page).to have_content('John')
       expect(page).to have_content('Peter')
     end
 
