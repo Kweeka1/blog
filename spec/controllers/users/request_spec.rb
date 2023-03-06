@@ -17,7 +17,7 @@ RSpec.describe 'Users', type: :request do
 
   context 'show action' do
     before(:example) do
-      get '/users/1'
+      get '/users/105'
     end
 
     it 'should return 200 status code' do

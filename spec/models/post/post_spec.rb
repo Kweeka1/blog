@@ -1,7 +1,7 @@
 require_relative '../../rails_helper'
 
 RSpec.describe Post, type: :model do
-  user = User.create(name: 'Peter', photo: 'https://imgur.com/xF8eA5', bio: 'Hi my name is Peter', posts_counter: 0)
+  user = User.create(name: 'Mark', photo: 'https://imgur.com/xF8eA5', bio: 'Hi my name is Peter', posts_counter: 0)
   subject do
     Post.create(user:, title: 'What is MVC pattern',
                 text: 'Model–view–controller is a software architectural pattern commonly used for developing ' \

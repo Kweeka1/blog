@@ -3,7 +3,7 @@ require_relative '../../rails_helper'
 RSpec.describe 'Posts', type: :request do
   context 'index action' do
     before(:example) do
-      get '/users/1/posts'
+      get '/users/105/posts'
     end
 
     it 'should return 200 status code' do
@@ -17,7 +17,7 @@ RSpec.describe 'Posts', type: :request do
 
   context 'show action' do
     before(:example) do
-      get '/users/1/posts/1'
+      get '/users/105/posts/122'
     end
 
     it 'should return 200 status code' do
