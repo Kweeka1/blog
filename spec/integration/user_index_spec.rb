@@ -1,6 +1,6 @@
-require_relative '../../ls_helper'
+require_relative '../rails_helper'
 
-RSpec.describe 'index page', type: :system do
+RSpec.describe 'users index page', type: :system do
   context 'index page' do
     it 'User should see the username of all other users' do
       visit root_path

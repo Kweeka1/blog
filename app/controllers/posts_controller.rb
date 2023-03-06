@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @user = User.find_by(id: params.require(:user_id))
+    @user = User.includes(:posts).find_by(id: params.require(:user_id))
   end
 
   def show

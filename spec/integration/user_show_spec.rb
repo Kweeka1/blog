@@ -1,6 +1,6 @@
 require_relative '../rails_helper.rb'
 
-RSpec.describe 'Show page', type: :system do
+RSpec.describe 'users show page', type: :system do
   context 'Show page' do
     it 'User should see the other user\'s profile picture' do
       visit user_path('105')
