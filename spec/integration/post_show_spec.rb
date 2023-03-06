@@ -24,9 +24,9 @@ RSpec.describe 'Post show page', type: :system do
 
     it 'I can see the post body' do
       visit user_post_path('1', '1')
-      expect(page).to have_content('Model–view–controller is a software architectural pattern commonly used' +
-                                    ' for developing user interfaces that divide the related' +
-                                     ' program logic into three interconnected elements.')
+      expect(page).to have_content('Model–view–controller is a software architectural pattern commonly used ' \
+                                   'for developing user interfaces that divide the related ' \
+                                   'program logic into three interconnected elements.')
     end
 
     it 'User can see the username of each comment' do

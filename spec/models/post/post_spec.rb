@@ -3,8 +3,8 @@ require_relative '../../rails_helper'
 RSpec.describe Post, type: :model do
   subject do
     Post.create(user: User.first, title: 'What is RSpec',
-                text: 'RSpec is a computer domain-specific language testing tool written in the programming language' +
-                      'Ruby to test Ruby code. It is a behavior-driven development' +
+                text: 'RSpec is a computer domain-specific language testing tool written in the programming language' \
+                      'Ruby to test Ruby code. It is a behavior-driven development' \
                       'framework which is extensively used in production applications.',
                 comments_counter: 0, likes_counter: 0)
   end
