@@ -1,4 +1,4 @@
-require_relative '../rails_helper.rb'
+require_relative '../rails_helper'
 
 RSpec.describe 'users show page', type: :system do
   context 'Show page' do
@@ -33,7 +33,9 @@ RSpec.describe 'users show page', type: :system do
       visit user_path('105')
       expect(page).to have_content('See all Post')
     end
+  end
 
+  context 'Show page navigation links' do
     it 'User should be able to click another user\'s post and redirects him to that post\'s show page' do
       visit user_path('105')
       click_link 'What is MVC pattern'
