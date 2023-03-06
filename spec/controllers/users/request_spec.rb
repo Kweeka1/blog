@@ -16,15 +16,13 @@ RSpec.describe 'Users', type: :request do
   end
 
   context 'show action' do
-    before(:example) do
-      get '/users/105'
-    end
-
     it 'should return 200 status code' do
+      get '/users/1/'
       expect(response).to have_http_status(:ok)
     end
 
     it "renders 'show' template" do
+      get '/users/1/'
       expect(response).to render_template('show')
     end
   end
