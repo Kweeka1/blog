@@ -1,11 +1,11 @@
 require_relative '../../rails_helper'
 
 RSpec.describe Post, type: :model do
-  user = User.create(name: 'Peter', photo: 'https://imgur.com/xF8eA5', bio: 'Hi my name is Peter', posts_counter: 0)
   subject do
-    Post.create(user:, title: 'What is MVC pattern',
-                text: 'Model–view–controller is a software architectural pattern commonly used for developing ' \
-                      'user interfaces that divide the related program logic into three interconnected elements.',
+    Post.create(user: User.first, title: 'What is RSpec',
+                text: 'RSpec is a computer domain-specific language testing tool written in the programming language' \
+                      'Ruby to test Ruby code. It is a behavior-driven development' \
+                      'framework which is extensively used in production applications.',
                 comments_counter: 0, likes_counter: 0)
   end
 
