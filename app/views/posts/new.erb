@@ -1,5 +1,5 @@
 <%= stylesheet_link_tag "form" %>
-<%= form_with model: @post, url: "/users/#{@user_id}/posts/create" do |form| %>
+<%= form_with model: @post, url: "/users/#{@user_id}/posts/create", class: "post-form" do |form| %>
   <%= form.label :title %><br>
   <%= form.text_field :title %>
   <%= form.label :text %><br>
