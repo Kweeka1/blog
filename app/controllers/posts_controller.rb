@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
+
   def index
     @user = User.includes(:posts).find_by(id: params.require(:user_id))
   end
@@ -6,11 +8,9 @@ class PostsController < ApplicationController
   def show
     @post = Post.find_by(id: params.require(:post_id))
     @user_id = params.require(:user_id)
-    @comment = Comment.new
   end
 
   def new
-    @post = Post.new
     @user_id = current_user.id
   end
 
@@ -26,7 +26,7 @@ class PostsController < ApplicationController
 
     if @post.save
       @post.increment_posts_counter
-      redirect_to "/users/#{user.id}/posts"
+      redirect_to user_posts_path user.id
     else
       render :new, status: :unprocessable_entity
     end
