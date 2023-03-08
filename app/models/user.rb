@@ -20,6 +20,8 @@ class User < ApplicationRecord
   end
 
   def init
+    return unless posts_counter.nil?
+
     self.posts_counter = 0
   end
 end
