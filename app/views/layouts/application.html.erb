@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "main" %>
   </head>
 
   <body>
+    <% if user_signed_in? %>
+      <header class="header">
+        <nav>
+          <h2>Welcome <%= current_user.name %></h2>
+          <%= button_to("Log Out", destroy_user_session_path, method: :delete, class: 'btn') %>
+        </nav>
+      </header>
+    <% end %>
     <%= yield %>
     <div class="errors">
       <p class="notice"><%= notice %></p>

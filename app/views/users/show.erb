@@ -6,9 +6,9 @@
   <div class="user">
     <h2><%= @user.name %></h2>
     <p>Number of posts: <%= @user.posts_counter || 0 %></p>
-    <button>
-      <%= link_to 'add Post', controller: 'posts', action: 'new' %>
-    </button>
+    <% if can?(:manage, Post) && @user.id == current_user.id %>
+      <%= button_to("add Post", new_post_path(@user), method: :get) %>
+    <% end %>
   </div>
 </section>
 <section class="bio">
@@ -28,7 +28,5 @@
   <% end %>
 </section>
 <footer>
-  <button class="footer-btn">
-    <%= link_to 'See all Post', user_posts_path(@user) %>
-  </button>
+  <%= button_to("See all Post", user_posts_path(@user), method: :get, class: 'footer-btn') %>
 </footer>

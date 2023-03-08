@@ -8,18 +8,20 @@
     <p>Likes: <%= @post.likes_counter || 0 %></p>
   </div>
   <div class="actions">
-    <button>
-      <%= link_to 'add Comment', controller: 'comments', action: 'new' %>
-    </button>
-    <button>
-      <%= link_to 'add Like', controller: 'likes', action: 'create' %>
-    </button>
+    <%= button_to("add Comment", new_comment_path(@user_id, @post), method: :get) %>
+    <%= button_to("Like", add_like_path(@user_id, @post), method: :post) %>
+    <% if can? :destroy, @post %>
+      <%= button_to("Delete post", destroy_post_path(@user_id, @post), method: :delete) %>
+    <% end %>
   </div>
   <p><%= @post.text %></p>
   <div class="comments">
     <% @post.comments.each do |comment| %>
       <div class="comment">
         <p><strong><%= comment.user.name %></strong>: <%= comment.text %></p>
+        <% if can? :delete, comment %>
+          <%= button_to("Delete comment", destroy_comment_path(@user_id, @post, comment), method: :delete) %>
+        <% end %>
       </div>
     <% end %>
   </div>
