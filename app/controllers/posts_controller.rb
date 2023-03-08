@@ -15,18 +15,17 @@ class PostsController < ApplicationController
   end
 
   def create
-    user = current_user
     @post = Post.new(
       title: post_params[:title],
       text: post_params[:text],
-      user:,
+      user: current_user,
       comments_counter: 0,
       likes_counter: 0
     )
 
     if @post.save
       @post.increment_posts_counter
-      redirect_to user_posts_path user.id
+      redirect_to user_posts_path current_user.id
     else
       render :new, status: :unprocessable_entity
     end
