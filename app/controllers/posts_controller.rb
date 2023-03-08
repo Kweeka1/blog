@@ -32,6 +32,11 @@ class PostsController < ApplicationController
     end
   end
 
+  def destroy
+    @user_id = params[:user_id]
+    Post.find_by(id: params[:post_id]).destroy
+  end
+
   private
 
   def post_params
