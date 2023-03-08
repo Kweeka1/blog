@@ -13,6 +13,11 @@ class CommentsController < ApplicationController
     redirect_to "/users/#{user.id}/posts/#{params[:post_id]}"
   end
 
+  def destroy
+    Comment.find_by(id: params[:comment_id]).destroy
+    redirect_to "/users/#{params[:user_id]}/posts/#{params[:post_id]}"
+  end
+
   private
 
   def comment_params
