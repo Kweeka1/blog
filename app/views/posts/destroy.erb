@@ -1,0 +1,15 @@
+<p>Post is successfully deleted!</p>
+<p>You are being <%= link_to 'redirected', "/users/#{@user_id}/posts" %><span id="timeout" > 5</span></p>
+<script>
+  window.onload = function () {
+    const span = document.querySelector("#timeout")
+    let time = 5
+    setInterval(() => {
+        span.innerText = ` ${time -= 1}`
+    }, 1000)
+    setTimeout(() => {
+        clearInterval()
+        window.location.href = "/users/<%= @user_id %>/posts"
+    }, 5000)
+  }
+</script>
