@@ -7,8 +7,8 @@ class Api::CommentsController < Api::ApplicationController
   end
 
   def create
-    puts params
-    comment = Comment.new(author_id: current_user.id, post_id: params.require(:post_id), text: params[:comment][:text])
+    request_body = JSON.parse(request.body.read)
+    comment = Comment.new(author_id: current_user.id, post_id: params.require(:post_id), text: request_body['comment'])
     render json: comment
   end
 
