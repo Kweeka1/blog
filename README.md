@@ -145,6 +145,13 @@ Example:
 👤 **Mohamed Talbi**
 
 - GitHub: [@Kweeka1](https://github.com/Kweeka1)
+- LinkedIn: [Mohamed Talbi](https://www.linkedin.com/in/moetalbi/)
+
+👤 **Abdessittir Harkati**
+
+- GitHub: [@Abdessittir](https://github.com/Abdessittir)
+- Twitter: [@AbdessittirHar1](https://twitter.com/AbdessittirHar1)
+- LinkedIn: [Abdessittir](https://www.linkedin.com/in/abdessittirharkati/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
