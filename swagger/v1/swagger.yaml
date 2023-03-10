@@ -35,9 +35,8 @@ paths:
             schema:
               type: object
               properties:
-                comment:
-                  text:
-                    type: string
+                text:
+                  type: string
               required:
               - comment
               - text
