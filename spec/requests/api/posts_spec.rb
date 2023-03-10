@@ -5,7 +5,7 @@ RSpec.describe 'api/posts', type: :request do
 
   path '/api/users/{user_id}/posts' do
     parameter name: 'user_id', in: :path, type: :string, description: 'User id'
-    let(:user_id) { users(:user_1).id }
+    let(:user_id) { users(:user1).id }
 
     get('list posts') do
       produces 'application/json'
@@ -20,7 +20,7 @@ RSpec.describe 'api/posts', type: :request do
                  likes_counter: { type: :integer },
                  created_at: { type: :string },
                  updated_at: { type: :string },
-                 author_id: { type: :integer },
+                 author_id: { type: :integer }
                }
 
         after do |example|

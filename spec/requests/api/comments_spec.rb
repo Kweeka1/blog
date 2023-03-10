@@ -1,5 +1,6 @@
 require 'swagger_helper'
 
+# rubocop:disable Metrics/BlockLength
 RSpec.describe 'api/comments', type: :request do
   fixtures :all
 
@@ -9,8 +10,8 @@ RSpec.describe 'api/comments', type: :request do
 
     get('list comments') do
       response(200, 'successful') do
-        let(:user_id) { users(:user_1).id }
-        let(:post_id) { posts(:post_1).id }
+        let(:user_id) { users(:user1).id }
+        let(:post_id) { posts(:post1).id }
 
         schema type: :array,
                properties: {
@@ -19,7 +20,7 @@ RSpec.describe 'api/comments', type: :request do
                  created_at: { type: :string },
                  updated_at: { type: :string },
                  author_id: { type: :integer },
-                 post_id: { type: :integer },
+                 post_id: { type: :integer }
                }
 
         after do |example|
@@ -49,8 +50,8 @@ RSpec.describe 'api/comments', type: :request do
       }
 
       response(201, 'successful') do
-        let(:user_id) { users(:user_1).id }
-        let(:post_id) { posts(:post_1).id }
+        let(:user_id) { users(:user1).id }
+        let(:post_id) { posts(:post1).id }
 
         after do |example|
           example.metadata[:response][:content] = {
@@ -63,4 +64,5 @@ RSpec.describe 'api/comments', type: :request do
       end
     end
   end
-end 
+end
+# rubocop:enable Metrics/BlockLength
