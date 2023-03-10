@@ -1,0 +1,15 @@
+user1:
+  id: 1
+  name: Peter
+  photo: https://imgur.com/xF8eA5
+  bio: Hi my name is Peter
+  posts_counter: 2
+  email: peter@gmail.com
+
+user2:
+  id: 2
+  name: John
+  photo: https://imgur.com/Af4quY7
+  bio: Hi my name is John
+  posts_counter: 0
+  email: John@gmail.com
